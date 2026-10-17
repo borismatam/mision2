@@ -6,3 +6,11 @@ def contar_aciertos(valores_reales, valores_predichos):
     if len(valores_reales) != len(valores_predichos):
         raise ValueError("Las listas deben tener la misma longitud")
     return sum(a == b for a, b in zip(valores_reales, valores_predichos))
+
+def calcular_precision(valores_reales, valores_predichos):
+    """Calcula la precisión (accuracy) como la proporción de aciertos sobre el total."""
+    if not valores_reales:
+        return 0.0
+    
+    aciertos = contar_aciertos(valores_reales, valores_predichos)
+    return aciertos / len(valores_reales)
