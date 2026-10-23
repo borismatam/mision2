@@ -10,6 +10,12 @@ class TestMetricas(unittest.TestCase):
         with self.assertRaises(ValueError):
             contar_aciertos([1], [1, 0])
 
+    def test_todos_aciertos(self):
+        self.assertEqual(contar_aciertos([1, 1], [1, 1]), 2)
+
+    def test_ningun_acierto(self):
+        self.assertEqual(contar_aciertos([1, 1], [0, 0]), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
