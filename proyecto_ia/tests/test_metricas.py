@@ -16,8 +16,8 @@ class TestMetricas(unittest.TestCase):
     def test_ningun_acierto(self):
         self.assertEqual(contar_aciertos([1, 1], [0, 0]), 0)
 
-    def test_dos_acierto(self):
-            self.assertEqual(contar_aciertos([1, 1, 1], [1, 1,0]), 2)
+    def test_dos_aciertos(self):
+            self.assertEqual(contar_aciertos([2,3,2], [2,2,2]),2)
 
 
 if __name__ == "__main__":
