@@ -162,7 +162,7 @@ git push -u origin feature/nueva-funcionalidad
 git push
 ```
 
-### 7. Otros Comandos Muy Útiles
+### 7. Otros Comandos
 - **`git log --oneline`**: Muestra el historial reciente de commits en formato compacto de una sola línea.
 - **`git diff`**: Muestra las diferencias exactas de código pendientes de preparación.
 - **`git fetch`**: Descarga la información del repositorio remoto sin mezclarla automáticamente con tu código de trabajo.
